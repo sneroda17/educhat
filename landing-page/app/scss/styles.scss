@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+body {
+  font-family:SegoeUI, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/faculty.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.title-top-message {
+  font-size: 60px;
+}
+
+.title-top-desc {
+  font-size: 25px;
+}
+
+.header__create-acc-btn {
+  width: 164px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+  color: #4ea6e5;
+  font-size: 16px;
+  // display: block;
+  margin-bottom: 28px;
+}
+
+.header__singin-btn {
+  font-size: 16px;
+  width: 164px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #2fc35f;
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+  // display: block;
+  color: #ffffff;
+}
+
+.header__singin-btn:hover {
+  background-color: darken(#2fc35f, 3%);
+}
+
+.header-content {
+  text-align: center;
+  margin-top: 160px;
+}
+
+.learn-more {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+.nav-menu {
+  position: absolute;
+  list-style-type: none;
+  overflow: hidden;
+  float: right;
+  right: 0;
+  top: 0;
+  padding: 0;
+  li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 17px;
+    // the sign in button
+    button {
+      color: white;
+      font-size: 16px;
+      width: 73px;
+      height: 40px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+      border: solid 1px #f6f9fc;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  padding: 15px;
+}
+
+.logo>span {
+  align-self: center;
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.why-edu-chat {
+  padding-bottom: 250px;
+  h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+.why-edu-chat__reasons {
+  display: flex;
+  justify-content: space-around;
+   div {
+    width: 395px;
+    height: 100px;
+  }
+}
+
+.why-edu-chat__reason_header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.class-engagment {
+  // height: 900px;
+  padding-bottom: 150px;
+  background-image: linear-gradient(119deg, #3dbdb6, #0089ce);
+}
+
+.class-engagment__header {
+  text-align: center;
+  margin-bottom: 52px;
+  img {
+    margin-top: 100px;
+  }
+  h2 {
+    font-size: 22px;
+    color: white;
+  }
+}
+
+.class-engagment__desc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.class-engagment__desc__box {
+    position: relative;
+    color: white;
+    padding: 30px;
+    width: 440px;
+    height: 202px;
+    border-radius: 3px;
+    background-color: rgba(23, 143, 164, 0.5);
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1); 
+
+    hr {
+      border-top: 1px solid white;
+    }
+
+    a {
+      font-size: 17px;
+      float: right;
+      text-decoration: none;
+      color: #003b65;
+    }
+  }
+
+.digital-office-hours {
+    padding-bottom: 150px;
+
+}
+
+.desc__office__hours {
+  background-color: #e9e9e9;
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  color: #4a4a4a;
+  hr {
+     border-top: 1px solid #4a4a4a;
+  }
+
+  a {
+      color: #4ea6e5;
+  }
+}
+
+.digital__office__header {
+  h2 {
+    color: #000000;
+  }
+}
+
+.class-bot {
+  padding-bottom: 150px;
+  background-image: linear-gradient(126deg, #1172d0, #1d98d6);
+  border: solid 1px #e1e1e1;
+}
+
+.bot__desc {
+  text-align: center;
+  color: white;
+  line-height: 1.53;
+  height: 78px;
+  width: 781px;
+  margin: auto;
+}
+
+.bring-your-students {
+  img {
+    margin-top: 0; // reset from inherited style
+    margin-top: 15px;
+  }
+  
+  h2 {
+    color: #242424;
+    font-size: 30px;
+  }
+}
+
+.get-started {
+  height: 243px;
+  background-color: #3e3e58;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  h2 {
+    text-align: center;
+    color: #f4f7fb;
+    font-size: 50px;
+  }
+  button {
+      color: white;
+      font-size: 16px;
+      width: 200px;
+      height: 50px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+      border: solid 1px #f6f9fc;
+      margin: auto;
+  }
+}
+
+footer {
+  height: 240px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__section_titile {
+    margin-bottom: 17px;
+    font-size: 15px;
+    color: #8998aa;
+}
+
+.footer__section_list {
+    color: #8998aa;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 11px;
+    font-size: 15px;
+}
+
+.made-in-nyc {
+  margin-top: 50px;
+  font-size: 15px;
+  color: #4a90e2;
+  font-weight: bold;
+}

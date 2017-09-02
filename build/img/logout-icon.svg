@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Create-Subchat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account-Settings" transform="translate(-30.000000, -639.000000)" fill-rule="nonzero" fill="#29ACBE">
+            <path d="M37.519774,642.310734 L37.519774,643.440678 L34.1299435,643.440678 L34.1299435,655.870056 L46.559322,655.870056 L46.559322,643.440678 L43.1694915,643.440678 L43.1694915,642.310734 L47.6892655,642.310734 L47.6892655,657 L33,657 L33,642.310734 L37.519774,642.310734 Z M40.9096045,650.559322 L39.779661,650.559322 L39.779661,639.025868 L37.8791181,640.926411 L37.1486699,640.195963 L40.3446328,637 L43.5405956,640.195963 L42.8101475,640.926411 L40.9096045,639.025868 L40.9096045,650.559322 Z" id="Share" transform="translate(40.344633, 647.000000) rotate(90.000000) translate(-40.344633, -647.000000) "></path>
+        </g>
+    </g>
+</svg>

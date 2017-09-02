@@ -1,0 +1,23 @@
+.memberPhoto {
+  max-width: 300px;
+  height: 250px;
+}
+
+.teamMember {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamMember h2 {
+  color: #f3bb25;
+}
+
+/*smartphone specifc styles */
+@media only screen and (max-width: 600px) {
+  .teamMember {
+    width: 50%;
+    margin-right: 25vw;
+  }
+}

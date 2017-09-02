@@ -1,0 +1,12 @@
+.welcome-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-title {
+  font-size: 24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: lightgrey;
+}
+

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#D8D8D8" d="M100 200c55.228 0 100-44.772 100-100S155.228 0 100 0 0 44.772 0 100s44.772 100 100 100z"/>
+        <g fill="#FFF">
+            <text font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="18" font-weight="400" transform="translate(29 50)">
+                <tspan x="20.168" y="71.667">ADD CLASS </tspan> <tspan x="48.662" y="93.667">ICON</tspan>
+            </text>
+            <path d="M85.01 53.714h29.12a4.006 4.006 0 0 1 4.01 4.007V79.42a4.007 4.007 0 0 1-4.01 4.007H85.01A4.006 4.006 0 0 1 81 79.419V57.72a4.007 4.007 0 0 1 4.01-4.007zm14.56 24.141a9.285 9.285 0 1 0 0-18.57 9.285 9.285 0 0 0 0 18.57zm0-3.714a5.571 5.571 0 1 1 0-11.142 5.571 5.571 0 0 1 0 11.142zM93.999 50h11.142l3.714 3.714h-18.57L93.999 50z"/>
+        </g>
+    </g>
+</svg>

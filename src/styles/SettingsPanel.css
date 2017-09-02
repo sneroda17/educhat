@@ -1,0 +1,684 @@
+.right-user-container, .right-event-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: calc(100% - 275px);
+  max-height: calc(100% - 75px);
+}
+
+.chat-settings {
+  text-align: center;
+}
+
+.chat-image-upload {
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.chat-image-upload > input {
+  display: none;
+}
+
+.chat-image-upload > label {
+  cursor: pointer;
+}
+
+.chat-image-upload-disabled > input {
+  display: none;
+}
+
+.chat-image-upload-disabled > label {
+  cursor: default;
+}
+
+.chat-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.chat-picture-hoverable{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity:1;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+}
+
+.chat-picture-hoverable:hover{
+  opacity: .5;
+  transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+}
+
+.upload-img{
+  display:none;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 80px;
+  margin-left: 110px;
+  margin-top: -80px;
+  position:absolute;
+  opacity:1;
+  z-index:-1;
+}
+
+.upload-img:hover{
+  display:block;
+  z-index: 1;
+}
+
+.chat-picture-hoverable:hover ~ .upload-img{
+  display:block;
+  z-index: 1;
+}
+
+.upload-img:hover ~ .chat-picture-hoverable{
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.chat-settings-name {
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+}
+
+.chat-name-form {
+  border-radius: 3px;
+  color: #4a4a4a;
+  border: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background: white;
+}
+
+.chat-settings-desc {
+  color: #4a4a4a;
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  min-height: 140px;
+  width: 249px;
+  text-align: center;
+  margin-left: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  background: white;
+}
+
+.chat-desc-form {
+  height: 140px;
+  width: 230px;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 3px;
+  color: #4a4a4a;
+  border: none;
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: left;
+  margin-left: 10px;
+  resize: none;
+  background: white;
+}
+
+/*To make it work for different browsers*/
+.chat-desc-form::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.chat-desc-form:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+.chat-desc-form::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+.chat-desc-form:-ms-input-placeholder {
+  text-align: center;
+}
+
+.chat-desc-form::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.chat-desc-form::-webkit-scrollbar
+{
+  width: 7px;
+  border-radius: 2.5px;
+  background-color: transparent;
+}
+
+.chat-desc-form::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+.edit-settings-btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.name-desc-line {
+  border: solid .5px #e6e6e6;
+  width: 187px;
+  margin-left: calc((100% - 187px) / 2)
+}
+
+.name-desc-line-blue {
+  border: solid 0.5px #29acbe;
+  width: 187px;
+  margin-left: calc((100% - 187px) / 2);
+}
+
+.chat-settings-desc::-webkit-scrollbar {
+  width: 14px;
+}
+
+.chat-settings-desc::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 73, 74, 0.65);
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.chat-leave-archive {
+  text-align: center;
+}
+
+.archive-btn {
+  cursor: pointer;
+  border: 0;
+  width: 153px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #2fc35f;
+  color: white;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.archive-btn:hover {
+  background-color: #228e45;
+}
+
+.leave-btn {
+  background-color: #da5539;
+}
+
+.leave-btn:hover {
+  background-color: #ba4730;
+}
+
+.edit-button {
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  border: solid 0.5px #29acbe;
+  margin-left: 210px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.edit-button:hover {
+  cursor: pointer;
+}
+
+.edit-button-invisible {
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  border: solid 0.5px #29acbe;
+  margin-left: 210px;
+  margin-top: 10px;
+  visibility: hidden;
+  background-color: white;
+}
+
+.edit-text {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #29acbe;
+  margin-top: 1px;
+  margin-left: .5px;
+}
+
+.edit-text-invisible {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #29acbe;
+  margin-top: 1px;
+  margin-left: .5px;
+  visibility: hidden
+}
+
+.save-button {
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  border: solid 0.5px #29acbe;
+  margin-left: 210px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.save-button:hover {
+  cursor: pointer;
+}
+
+.save-button-invisible {
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  border: solid 0.5px #29acbe;
+  margin-left: 210px;
+  margin-top: 10px;
+  visibility: hidden;
+  background-color: white;
+}
+
+.save-text {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #29acbe;
+  margin-top: 1px;
+  margin-right: 2.5px;
+  margin-left: -2px;
+}
+
+.save-text-invisible {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #29acbe;
+  margin-top: 1px;
+  margin-right: 2.5px;
+  margin-left: -2px;
+  visibility: hidden;
+}
+
+.line {
+  width: 280px;
+  border: solid .5px #e6e6e6;
+}
+
+.line-blue {
+  width: 280px;
+  border: solid .5px #29acbe;
+}
+
+.Rectangle-box {
+  margin-bottom: 4px;
+  width: 280px;
+  height: 40px;
+}
+
+.Notification-icon {
+  font-family:'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  margin-left: 23px;
+  margin-top: 10px;
+  color: #5e95b6;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.Bot-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 23px;
+  margin-top: 10px;
+}
+
+.Delete-chat-icon {
+  font-family:'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 23px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  margin-left: 25px;
+  margin-bottom: -10px;
+  color: #5e95b6;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.Leave-chat-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.notifications-text {
+  margin-left: 65px;
+  margin-top: -24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  display: flex;
+  flex-flow: row;
+}
+
+.notifications-text-grey {
+  margin-left: 65px;
+  margin-top: -24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #808080;
+  display: flex;
+  flex-flow: row;
+}
+
+.bot-button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 65px;
+  margin-top: -24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  display: flex;
+  flex-flow: row;
+}
+
+.bot-button-grey {
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 65px;
+  margin-top: -24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #808080;
+  display: flex;
+  flex-flow: row;
+}
+
+.bot-button:hover {
+  color: #4a4a4a;
+}
+
+.bot-button-grey:hover {
+  color: #808080;
+  cursor: default;
+}
+
+.delete-chat-button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 65px;
+  margin-top: -25px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  display: flex;
+  flex-flow: row;
+}
+
+.delete-chat-button-grey {
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 65px;
+  margin-top: -25px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #808080;
+  display: flex;
+  flex-flow: row;
+}
+
+.delete-chat-button:hover {
+  color: #4a4a4a;
+}
+
+.delete-chat-button-grey:hover {
+  color: #808080;
+  cursor: default;
+}
+
+.Leave-chat-button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 65px;
+  margin-top: -24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  display: flex;
+  flex-flow: row;
+}
+
+.Leave-chat-button-grey {
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 65px;
+  margin-top: -24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #808080;
+  display: flex;
+  flex-flow: row;
+}
+
+.Leave-chat-button-grey:hover {
+  color: #808080;
+  cursor: default;
+}
+
+.Leave-chat-button:hover {
+  color: red;
+}
+
+.advanced-settings-button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 65px;
+  margin-top: -25px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  display: flex;
+  flex-flow: row;
+}
+
+.advanced-settings-button:hover {
+  color: #29acbe;
+}
+
+.hidden{
+  display:none;
+}
+
+.small-line {
+  margin-left: 30px;
+  width: 246.5px;
+  border: solid 1px #e6e6e6;
+}
+
+.right-event-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.right-event-container::-webkit-scrollbar
+{
+  width: 7px;
+  border-radius: 2.5px;
+  background-color: transparent;
+}
+
+.right-event-container::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+.notifications-checkbox {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px #979797;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  margin-top: 0px;
+}
+
+.notifications-checkbox:active, .invite-all-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.notifications-checkbox:checked {
+  background-color: #29acbe;
+  border: 1px solid #29acbe;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  color: #29acbe;
+}
+
+.notifications-checkbox:checked:after {
+  /*content: '\2714';*/
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #ffffff;
+  content: url('../../public/img/shape.svg');
+}
+
+.material-icons {
+  font-family:'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  margin-left: 23px;
+  margin-top: 10px;
+  color: #5e95b6;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

@@ -1,0 +1,659 @@
+
+.message {
+  display: flex;
+  margin: 34px 0 17px;
+  justify-content: flex-end;
+}
+
+.comment {
+  display: flex;
+  margin: 25px -15px 0px;
+}
+
+.message-no-user {
+  display: flex;
+  margin: 34px 13px 17px;
+  justify-content: flex-end;
+}
+
+.message[data-style="other_user_message"] {
+  justify-content: flex-start;
+  margin-left: -15px;
+}
+
+.message[data-style="current_user_message"] {
+  margin-right: 10px;
+}
+
+.message-image {
+  height: 41px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #dbdbdb;
+  display: block;
+  cursor: pointer;
+  margin: 0 13px 0 17px;
+  object-fit: cover;
+}
+
+.comment-image {
+  height: 41px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #dbdbdb;
+  display: block;
+  cursor: pointer;
+  margin: 0 13px 0 17px;
+  object-fit: cover;
+}
+
+.message-image-comment {
+  height: 41px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #dbdbdb;
+  display: block;
+  cursor: pointer;
+  margin: 0 13px 0 17px;
+}
+.message[data-style="current_user_message"] .message-image {
+  display: none;
+}
+
+.message-detail-container {
+  position: relative;
+  min-width: 100px;
+  max-width: 600px;
+  margin-left: -10px;
+}
+
+.message-username {
+  height: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: #4a4a4a;
+  /*top: -20px;*/
+  margin-right: 6px;
+  margin-top:5px;
+}
+
+.comment-username {
+  height: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: #4a4a4a;
+  /*top: -20px;*/
+  margin-right: 6px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.message[data-style="current_user_message"] .message-username {
+  display: none;
+}
+
+.message-textarea {
+  white-space: pre-wrap;
+  word-break: normal;
+  font-size: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  /*display: flex;*/
+  min-width: calc(100% - 150px);
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.5);
+  margin-top: 4px;
+}
+
+
+.comment-textarea {
+
+}
+
+.file-textarea-comment {
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  min-width: calc(100% - 150px);
+  width: 300px;
+  height: 250px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.5);
+}
+.comment-textarea-filepreview {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  max-width: 280px;
+  padding: 8px;
+  /*border-radius: 4px;*/
+  background-color: #ffffff;
+  box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+.message[data-style="current_user_message"] .message-textarea  {
+  border-right: solid 5px #29acbe;
+}
+
+.message[data-style="current_user_message"] .file-textarea {
+  border-right: solid 5px #29acbe;
+}
+
+
+.file-details[data-style="current_user_message"]{
+  border-right: solid 5px #29acbe;
+}
+
+.file-details[data-style="other_user_message"]{
+  display: none;
+}
+.message[data-style="other_user_message"] .message-textarea {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.message-timestamp {
+  font-size: 10px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.54);
+  /*position: inline;*/
+  right: 4px;
+  top: 10px;
+  bottom: 1px;
+  padding-top: 2px;
+}
+
+/*.message[data-style="current_user_message"] .message-timestamp {*/
+/*color: #ffffff;*/
+/*}*/
+
+/*EVENT STYLE*/
+.event-date-container {
+  width: 50px;
+  height: 50px;
+  ius: 10px;
+  background-color: #ffffff;
+  border: solid 2px #4a4a4a;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-month {
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+.event-day {
+  font-size: 18px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 1px;
+}
+
+.event-details-container {
+  margin: 2px 0 0 10px;
+}
+
+.event-message {
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.3px;
+}
+
+.event-title {
+  font-size: 18px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.event-timestamp {
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.3px;
+  opacity: 0.7;
+}
+/*EVENT STYLE*/
+
+/*FILE STYLE*/
+.file-ext-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: solid 2px #4ea6e5;
+  text-align: center;
+  line-height: 50px;
+  color: #4ea6e5;
+  text-transform: uppercase;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.file-details-container {
+}
+
+.file-message {
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.3px;
+}
+
+.file-title {
+  font-size: 18px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+/*.file-size {
+  font-size: 12px;
+  letter-spacing: -0.3px;
+}*/
+/*FILE STYLE*/
+
+.user-image-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.admin {
+  width: 33px;
+height: 12px;
+background-color: #4a4a4a;
+border: solid 0.5px #4a4a4a;
+font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+text-rendering: optimizeLegibility;
+font-size: 10px;
+letter-spacing: -0.2px;
+text-align: center;
+color: #ffffff;
+margin-right: 5px;
+margin-top: 8.5px;
+border-radius: 4px;
+}
+
+.ta {
+  width: 16px;
+  height: 12px;
+  ius: 5px;
+  background-color: #4a4a4a;
+  border: solid 0.5px #4a4a4a;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 5px;
+  margin-top: 2.5px;
+}
+
+.user-details-container {
+  display: flex;
+  top: -20px;
+}
+
+.message-timestamp {
+  height: 1px;
+  font-size: 10px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.2px;
+  color: rgba(0, 0, 0, 0.54);
+  /*position: inline;*/
+  right: 4px;
+  top: 10px;
+  bottom: 1px;
+  margin-top: -1px;
+  margin-left: 2px;
+}
+
+.message-time {
+  height: 7px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: -0.1px;
+  padding-left:3px;
+  color: #9b9b9b;
+}
+
+
+.message-time-comment{
+  height: 7px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  padding-left: 1px;
+  color: #3a3333;
+  padding-top: 2px;
+
+}
+
+.file-details {
+  width: 500px;
+  height: 160px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  /*box-shadow: 0 0.3px 0 0 rgba(0, 0, 0, 0.5);*/
+  /*padding-left: 20px;*/
+}
+
+.file-message-text {
+  /*width: 284.5px;*/
+  /*height: 40px;*/
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 10px;
+  height: 3.15em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1em;
+  width: 320px;
+  border-radius: 2px;
+  background-color: #ffffff;
+
+
+}
+.file-details-comment {
+  width: 280px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  /*box-shadow: 0 0.3px 0 0 rgba(0, 0, 0, 0.5);*/
+  /*padding-left: 20px;*/
+}
+
+.file-message-text {
+  /*width: 284.5px;*/
+  /*height: 40px;*/
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 10px;
+  max-height: 39.40px;
+  overflow:hidden;
+  /*line-height: 1.05em;*/
+}
+
+.file-message-text-comment {
+  /*width: 284.5px;*/
+  /*height: 40px;*/
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 5px;
+  max-height: 70px;
+  overflow: hidden;
+  word-break: break-word;
+}
+.file-message-text-comment {
+  width: 280px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 1px;
+  max-height: 67px;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+
+.file-message .text-style-1 {
+  letter-spacing: normal;
+}
+
+.file-picture {
+  width: 300px;
+  height: 180px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 15px 10px 10px;
+  border: 1px solid #d8d8d8;
+}
+
+.file-picture-comment {
+  width: 250px;
+  height: 145px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 15px;
+  float:left;
+  margin-bottom: -15px;
+  border: 1px solid #d8d8d8;
+}
+
+
+.file-name {
+  /*width: 62px;
+  height: 11px;*/
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color:white;
+  padding-left: 5px;
+}
+.file-name-file {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  text-align: left;
+  padding-left: 5px;
+}
+.file-name-comment {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: white;
+  padding-left: 5px;
+}
+
+.file-size {
+
+  /* 19.5px;
+  height: 7px;*/
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  /*width: 19.5px;
+  height: 7px;*/
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.file-size-file {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.file-size-comment {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.comment-count {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #1f5391;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.comment-count-file{
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  /*font-style: oblique;*/
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #1f5391;
+  margin-top: -10px;
+}
+
+.name-size{
+  vertical-align: text-top;
+  display: inline-block;
+  margin-top: -46px;
+  background-color: #000;
+  opacity: 0.7;
+  height: 33px;
+  width: 300px;
+  margin-left: 11px;
+}
+.name-size-comment{
+  vertical-align: text-top;
+  display: inline-block;
+  /* padding-left: 40px; */
+  margin-top: -15px;
+  background-color: #000;
+  opacity: 0.7;
+  height: 30px;
+  width: 250px;
+  margin-left: 16px;
+}
+/*
+.file-picture:hover + .name-size{
+  display: block;
+}*/
+.name-size-file{
+  vertical-align: text-top;
+  display: inline-block;
+  /* padding-left: 40px; */
+  margin-top: -55px;
+  height: 33px;
+  width: 300px;
+  margin-left: 70px;
+  /*display: none;*/
+}
+
+.msgLink {
+}
+
+.tool-bar-buttons {
+  vertical-align: bottom;
+  height: 12px;
+  width: 25px;
+  text-space: 0.6;
+  display: inline-block;
+  position: inherit;
+  border: none;
+  background: none;
+  top: 0;
+
+}
+
+.tool-bar[data-style="current_user_message"]{
+  height: 100%;
+  width: 35px;
+  /*background-color: #e8eaec;*/
+  border-radius: 2px;
+  margin-top:0px;
+  /*margin-right:-10px;*/
+
+}
+
+.tool-bar[data-style="other_user_message"]{
+  height: 100%;
+  width: 35px;
+  /*background-color: #e8eaec;*/
+  border-radius: 2px;
+  padding-top: 20px;
+  margin-top:5px;
+}
+
+.mark-best-answer{
+
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.forward-question-container {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.forward-question-btn {
+  border: none;
+  background-color: #CCCCCC;
+  color: #A7A7A7;
+  margin-right: 10px;
+  margin-left: 7px;
+  border-radius: 35%;
+  padding: 6px;
+  width: 40px;
+}
+
+.msg-forward-feedback-msg {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

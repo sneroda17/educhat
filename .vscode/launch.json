@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to find out which attributes exist for node debugging
+  // Use hover for the description of the existing attributes
+  // For further information visit https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Tests With Debugger",
+      "port": 5858,
+      "address": "localhost",
+      "stopOnEntry": false,
+      "runtimeExecutable": null,
+      "runtimeArgs": [
+        "--debug-brk",
+        "./scripts/test.js",
+        "--env=jsdom",
+        "-i"
+      ],
+      "cwd": "${workspaceRoot}",
+      "sourceMaps": true,
+      "console": "integratedTerminal"
+    }
+  ]
+}

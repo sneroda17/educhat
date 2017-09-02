@@ -1,0 +1,79 @@
+.botFilesPanel {
+  width: 20%;
+  border: 1px solid #95989A;
+  animation: right-panel-animation .2s linear;
+}
+
+@keyframes right-panel-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.header {
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: #3FA7C2;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-title {
+  margin-left: 0px;
+}
+
+.close-btn {
+  margin-right: 60px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.bot-file {
+  cursor: pointer;
+  display: flex;
+  border-bottom: 1px solid #95989A;
+  margin-bottom: 15px;
+  height: 32px;
+  justify-content: space-between;
+}
+
+.bot-file > span {
+  font-size: 13px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-overflow: ellipsis;
+  /*margin-left: 25px;*/
+  margin-top: 9px;
+}
+
+.bot-file-list {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.bot-file-list::-webkit-scrollbar {
+  width: 14px;
+}
+
+.bot-file-list::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 73, 74, 0.65);
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.drop-info {
+  cursor: pointer;
+  margin-top: 100px;
+  font-size: 30px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #95989A;
+  text-align: center;
+}

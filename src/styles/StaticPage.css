@@ -1,0 +1,172 @@
+.about {
+  position: relative;
+}
+
+.about ::selection {
+  background: #f3bb25;
+}
+
+.logo {
+  width: 185px;
+  height: 86px;
+}
+
+.navbar-top {
+  background-color: #f3bb25;
+  padding: 20px;
+}
+
+.navbar-bottom {
+  position: absolute;
+  width: 96.7vw; /*This is bad, if anyone knows how to fix this pls do it*/
+  height: 3vh;
+  padding: 2vh;
+  background-color: rgba(74, 74, 74, 0.4);
+  text-align: center;
+}
+.navbar-bottom li {
+  margin-left: 10%;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+}
+.navbar-bottom li:hover {
+  text-decoration: underline;
+}
+
+.about-signup-login {
+  float: right;
+  margin-top: 30px;
+}
+
+.about-signup-login span {
+  margin-right: 33px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.about-signup-button {
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+}
+.about-login-button {
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #f3bb25;
+  background-color: white;
+  border-radius: 1px;
+  padding-right: 28px;
+  padding-left: 28px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.about-top-text {
+  font-size: 30px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  margin-left:auto;
+  margin-right:auto;
+  font-weight: bolder;
+  width: 50vw;
+  text-align: center;
+}
+
+.about-bottom-text {
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50vw;
+}
+
+.about-title {
+  font-weight: bolder;
+}
+
+/*smartphone specifc styles */
+@media only screen and (max-width: 600px) {
+  h1 { font-size: 8vw; }
+  h3 { font-size: 4vw; }
+
+  #signup-button {
+    width: 50vw;
+    font-size: 7vw;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  #footer li {
+    font-size: 14px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .navbar-bottom li {
+    font-size: 15px;
+    margin-left: 6px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .about-signup-login {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .about-signup-button {
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .about-login-button {
+    font-size: 15px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+  }
+
+  .about-signup-login span {
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+
+  .about-top-text {
+    font-size: 6vw;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .about-bottom-text {
+    font-size: 4vw;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .navbar-top {
+    padding: 28px;
+  }
+
+  .navbar-bottom {
+    width: 93vw;
+  }
+}
+
+#footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#footer li {
+  margin-right: 8px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color:  #f3bb25;
+}

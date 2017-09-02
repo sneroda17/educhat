@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+body {
+  font-family:SegoeUI, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #0089ce;
+}
+
+.hamburger-toggle {
+  display: none;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/faculty.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.title-top-message {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.title-top-desc {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.header__create-acc-btn {
+  font-size: 16px;
+  width: 164px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #2fc35f;
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 15px;
+}
+
+.header__create-acc-btn:hover {
+  width: 164px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+  color: #4ea6e5;
+  font-size: 16px;
+}
+
+.header__singin-btn:hover {
+  background-color: #2cb759;
+}
+
+.header-content {
+  text-align: center;
+  margin-top: 160px;
+}
+
+#learn-more {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  width: 100px;
+}
+
+#learn-more>p:hover {
+  color: gray;
+}
+
+.nav-menu {
+  position: absolute;
+  list-style-type: none;
+  overflow: hidden;
+  float: right;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline;
+  margin-right: 50px;
+  font-size: 17px;
+}
+
+.nav-menu li button {
+  color: white;
+  font-size: 16px;
+  width: 73px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+  border: solid 1px #f6f9fc;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  padding: 15px;
+}
+
+.logo>span {
+  align-self: center;
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+
+.why-edu-chat {
+  padding-bottom: 250px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.why-edu-chat h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.why-edu-chat__reasons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.why-edu-chat__reason_header {
+  /*display: inline;*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.class-engagment {
+  padding-bottom: 150px;
+  background-image: linear-gradient(119deg, #3dbdb6, #0089ce);
+}
+
+.class-engagment__header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.class-engagment__header img {
+  margin-top: 30px;
+}
+
+.class-engagment__header h2 {
+  font-size: 22px;
+  color: white;
+}
+
+.class-engagment__desc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.class-engagment__desc__box {
+  position: relative;
+  color: white;
+  padding: 30px;
+  width: 440px;
+  height: 202px;
+  border-radius: 3px;
+  background-color: rgba(23, 143, 164, 0.5);
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.class-engagment__desc__box hr {
+  border-top: 1px solid white;
+}
+
+.class-engagment__desc__box a {
+  font-size: 17px;
+  float: right;
+  text-decoration: none;
+  color: #003b65;
+}
+
+.class-engagment__desc__box a:hover {
+  color: #75c5ff;
+}
+
+.digital-office-hours {
+  padding-bottom: 150px;
+}
+
+.desc__office__hours {
+  background-color: #e9e9e9;
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  color: #4a4a4a;
+}
+
+.desc__office__hours hr {
+  border-top: 1px solid #4a4a4a;
+}
+
+.desc__office__hours a {
+  color: #4ea6e5;
+}
+
+.digital__office__header h2 {
+  color: #000000;
+}
+
+.class-bot {
+  /*margin-top: -120px;*/
+  padding-bottom: 150px;
+  background-image: linear-gradient(126deg, #1172d0, #1d98d6);
+  border: solid 1px #e1e1e1;
+}
+
+.bot__desc {
+  text-align: center;
+  color: white;
+  line-height: 1.53;
+  height: 78px;
+  width: 781px;
+  margin: auto;
+}
+
+.bring-your-students img {
+  margin-top: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.bring-your-students h2 {
+  color: #242424;
+  font-size: 30px;
+  font-weight: 400;
+  width: 666px;
+  height: 76px;
+  margin: auto;
+}
+
+.get-started {
+  height: 243px;
+  background-color: #3e3e58;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.get-started h2 {
+  font-weight: 300;
+  text-align: center;
+  color: #f4f7fb;
+  font-size: 50px;
+}
+
+.get-started-button {
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+  border: solid 1px #f6f9fc;
+  margin: auto;
+}
+
+footer {
+  position: relative;
+  height: 240px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__section_titile {
+  margin-bottom: 17px;
+  font-size: 15px;
+  color: #8998aa;
+}
+
+.footer__section_list {
+  color: #8998aa;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 15px;
+}
+
+.footer__section_list a {
+  text-decoration: none;
+  color: #8998aa;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+  color: #8998aa;
+}
+
+.made-in-nyc {
+  margin-top: 50px;
+  font-size: 15px;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+#top-button {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  animation: fade-top_btn .8s;
+}
+
+@keyframes fade-top_btn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  #learn-more {
+    display: none;
+  }
+  .header__create-acc-btn {
+    /*width: 100px;
+    height: 25px;
+    font-size: 10px;*/
+  }
+  .haumburger-item {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .hamburger-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 27px;
+    margin-right: 5px;
+  }
+  .navbar {
+    background-image: linear-gradient(119deg, #3dbdb6, #0089ce);
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-image: linear-gradient(119deg, #3dbdb6, #0089ce);
+    width: 100%;
+    animation: slide-down .8s;
+  }
+  @keyframes slide-down {
+    from {
+      max-height: 0;
+    }
+    to {
+      max-height: 100%;
+    }
+  }
+  .nav-menu li {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .nav-menu li button {
+    font-size: 12px;
+  }
+  .title-top-message {
+    font-size: 43px;
+  }
+  .title-top-desc {
+    font-size: 18px;
+  }
+  .why-edu-chat {
+    padding: 0;
+  }
+  .why-edu-chat h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+  .why-edu-chat__reasons {
+    display: block;
+  }
+  .why-edu-chat__reasons div {
+    text-align: center;
+    width: 100%;
+  }
+  .why-edu-chat__reason_header {
+    margin-top: 15px;
+  }
+  .class-engagment__header h2 {
+    font-size: 19px;
+  }
+  .class-engagment__header img {
+    margin-top: 20px;
+  }
+  .class-engagment__desc__app-img {
+    width: 90%;
+    height: 40%;
+    display: block;
+    margin-left: 30px;
+  }
+  .class-engagment__desc {
+    display: inline;
+  }
+  .class-engagment__desc__box {
+    width: 60%;
+    height: 330px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .class-engagment__desc__box a {
+    font-size: 20px;
+  }
+  .digital-office-hours-img {
+    width: 260px;
+    height: 200px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .laptop-img {
+    width: 320px;
+    height: 200px;
+  }
+  .bot__desc {
+    width: 100%;
+  }
+  .bring-your-students h2 {
+    width: 100%;
+  }
+  footer {
+    display: inline;
+    text-align: center;
+  }
+  .made-in-nyc {
+    margin-left: 28px;
+  }
+  .copyright {
+    position: static;  
+  }
+}

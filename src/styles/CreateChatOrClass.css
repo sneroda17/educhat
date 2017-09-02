@@ -1,0 +1,383 @@
+.chat-creation-popup {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 20px);
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  animation: chat-creation-popup-animation .2s linear;
+}
+
+.chat-creation-popup__body {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.popup-title {
+  width: 300px;
+  height: 60px;
+  background-color: #127c8a;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.popup-title-text {
+  font-size: 18px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  width: 141px;
+  height: 21px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.popup-close-button {
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin: 0 5px 0 auto;
+}
+.popup-close-button:hover {
+  opacity: .5;
+}
+
+@keyframes chat-creation-popup-animation {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.chat-name-input {
+  width: 260px;
+  font-size: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 10px;
+  height: 41px;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px #6f6f6f;
+}
+
+.chat-name-input::placeholder {
+  width: 104px;
+  height: 25px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #9b9b9b;
+}
+
+.icon-create-chat-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.icon-create-chat-input + label {
+  height: 200px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  width: 200px;
+  line-height: 300px;
+  border-radius: 50%;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: gray;
+  display: inline-block;
+}
+
+.preview-src-pic {
+  height: 200px;
+  width: 200px;
+  line-height: 300px;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.icon-create-chat-input:focus + label,
+.icon-create-chat-input + label:hover {
+  opacity: .5;
+}
+.icon-create-chat-input:focus + label {
+  /*outline: 1px dotted #000;*/
+  /*outline: -webkit-focus-ring-color auto 5px;*/
+}
+
+.chat-creation-next-button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  height: 50px;
+  width: 153px;
+  margin-top: 35px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.7px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  background-color: #d8d8d8;
+  color: white;
+  border-radius: 5px;
+}
+
+.close-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.active-chat-creation-next-button {
+  background-color: #127c8a;
+  cursor: pointer;
+  display: block;
+  border: none;
+  height: 50px;
+  width: 153px;
+  margin-top: 35px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.7px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+/*.chat-creation-next-button:hover {*/
+/*background-color:  #127c8a;*/
+/*opacity: 1;*/
+/*}*/
+
+.chat-creation-spinner {
+  height: 20px;
+  width: 20px;
+}
+
+.empty-chat-error{
+  margin-top: -10px;
+  color: red;
+}
+
+.chat-privacy-title {
+  font-size: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 50.5px;
+  margin-bottom: 5px;
+}
+
+.chat-privacy-desc {
+  width: 210px;
+  height: 28px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 10px;
+}
+
+.chat-privacy-selection-box {
+  text-align: center;
+  align-items: center;
+}
+
+.chat-privacy-button {
+  cursor: pointer;
+  padding: 0px;
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+  display: inline-flex;
+  align-items: center;
+}
+
+.chat-privacy-button__active {
+  cursor: pointer;
+  margin-top: 5px;
+  border: solid 1px #29acbe;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+}
+
+.chat-privacy-button__text {
+  width: 70px;
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.chat-privacy-button__text--active {
+  color: white;
+}
+
+.chat-privacy-button--private {
+  background: linear-gradient(90deg, #29acbe  50%, white 50%);
+}
+
+.chat-privacy-button--public {
+  background: linear-gradient(90deg, white 50%, #29acbe 50%);
+}
+
+.subchat-creation-popup {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 20px);
+  width: 270px;
+  /*border-radius: 3px;*/
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  animation: chat-creation-popup-animation .2s linear;
+}
+
+.subchat-creation-popup__body {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.subchat-popup-title {
+  width: 270px;
+  height: 41px;
+  background-color: #127c8a;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.subchat-checkbox {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px #979797;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+}
+
+.subchat-checkbox:active, .subchat-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.subchat-checkbox:checked {
+  background-color: #29acbe;
+  border: 1px solid #29acbe;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  color: #29acbe;
+}
+
+.subchat-checkbox:checked:after {
+  /*content: '\2714';*/
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #ffffff;
+  content: url('../../public/img/shape.svg');
+}
+
+.anonymous-selection {
+  width: 260px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #6f6f6f;
+}
+
+.anonymous-selection-hint {
+  width: 187px;
+  height: 19px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  margin-left: 2px;
+}
+
+.invite-all-checkbox {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px #979797;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+}
+
+.invite-all-checkbox:active, .invite-all-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.invite-all-checkbox:checked {
+  background-color: #29acbe;
+  border: 1px solid #29acbe;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  color: #29acbe;
+}
+
+.invite-all-checkbox:checked:after {
+  /*content: '\2714';*/
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #ffffff;
+  content: url('../../public/img/shape.svg');
+}
+
+.invite-all-selection {
+  width: 260px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 8.0px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #4a4a4a;
+}
+
+.invite-all-selection-hint {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  margin-left: 2px;
+}

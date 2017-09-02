@@ -1,0 +1,412 @@
+.invite-header {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.toggle-invite-button {
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  background: none;
+  height: 47px;
+  width: 300px;
+  /*margin-right: 10px;*/
+  align-items: center;
+  margin-left: 15px;
+}
+
+.invite-container {
+  /*margin-top: 14px;*/
+  margin-left: 20px;
+  height: 100%;
+}
+
+.invite-header-text {
+  border-bottom: solid 2px #e6e6e6;
+  padding-bottom: 13px;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: #9b9b9b;
+  width: 220px;
+}
+
+.invite-box-description {
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  margin-left: 18px;
+  color: #9b9b9b;
+}
+
+.invite-input-container {
+  width: 230px;
+  height: 30px;
+  /*max-height: 500px;*/
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 2px #ebebeb;
+  margin: 15px auto 0 auto;
+  /*overflow: auto;*/
+}
+
+.invite-input {
+  border: 0;
+  width: 200px;
+  outline: none;
+  font-size: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  margin-left: 6px;
+  margin-top: 4px;
+  position: relative;
+}
+
+.invite-button {
+  cursor: pointer;
+  border: none;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+  color: #ffffff;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.6px;
+  margin-left: 50px;
+}
+
+.skip-button {
+  /* border-radius: 5px; */
+font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+font-size: 10px;
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+letter-spacing: 0.6px;
+margin-left: 11px;
+text-align: center;
+color: #95989a;
+border: none;
+background: none;
+}
+.active-invite-button {
+  cursor: pointer;
+  border: none;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #127c8a;
+  color: #ffffff;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.6px;
+  margin-left: 50px;
+}
+
+.invite-box-error{
+  font-size: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: red;
+  letter-spacing: 0.6px;
+}
+
+.invite-box-loading{
+  width: 250px;
+  height: 250px;
+}
+
+/*.invite-all-checkbox {*/
+  /*width: 15px;*/
+  /*height: 15px;*/
+  /*border-radius: 2px;*/
+  /*border: solid 1px #979797;*/
+/*}*/
+
+.invite-all-checkbox {
+   width: 10px;
+   height: 10px;
+   border-radius: 2px;
+   border: solid 1px #979797;
+   -webkit-appearance: none;
+   background-color: #ffffff;
+   padding: 9px;
+   display: inline-block;
+   position: relative;
+ }
+
+.invite-all-checkbox:active, .invite-all-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.invite-all-checkbox:checked {
+  background-color: #29acbe;
+  border: 1px solid #29acbe;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  color: #29acbe;
+}
+
+.invite-all-checkbox:checked:after {
+  /*content: '\2714';*/
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #ffffff;
+  content: url('../../public/img/shape.svg');
+}
+
+.invite-all-selection {
+  width: 260px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 8.0px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #4a4a4a;
+}
+
+.invite-all-selection-hint {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+  margin-left: 2px;
+}
+
+.hidden{
+  display:none;
+}
+
+.unhidden{
+  display:block;
+}
+
+.user-img {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  padding: 4px;
+  margin-right: 5px;
+  float: left;
+  flex: 1;
+  object-fit: cover;
+}
+
+.user-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  display: inline-block;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: #4a4a4a;
+  margin-right: 10px;
+  float: left;
+  max-width: 150px;
+  overflow: hidden;
+  flex: 5;
+}
+
+.user-email {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  display: inline-block;
+  letter-spacing: -0.1px;
+  color: #6f6f6f;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  /*margin-left: 10px;*/
+  text-align: left;
+  float: left;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.user-message {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  display: inline-block;
+  letter-spacing: -0.1px;
+  color: red;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  /*margin-left: 10px;*/
+  text-align: left;
+  float: left;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.disable-invite {
+  display: block;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+  width: 230px;
+  /*width: 100%;*/
+  background: #f0f0f0;
+  padding: 6px;
+  border-top: solid 2px #ebebeb;
+}
+
+.add-people-img{
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+.user {
+  display: flex;
+  border-bottom: solid 1px #e6e6e6;
+  height: 40px;
+  align-items: center;
+  flex-direction: row;
+  width: 236px;
+}
+
+.remove-btn {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  color: red;
+  background-color: white;
+  border: none;
+  border-radius: 100%;
+  flex: 1;
+}
+
+.fixed-container {
+  position: relative;
+  margin-top: 0;
+}
+
+.fixed-list {
+  position: absolute;
+  top: 180px;
+  width: 300px;
+  max-height: 550px;
+  height: calc(100% - 100px);
+  /*z-index: 0;*/
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.fixed-list::-webkit-scrollbar {
+  width: 14px;
+}
+
+.fixed-list::-webkit-scrollbar {
+  width: 14px;
+}
+
+.fixed-list::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 73, 74, 0.65);
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.invited-user-list {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  position: absolute;
+  /*z-index: -1;*/
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: inherit;
+  width: 250px;
+  /*max-height: 550px;*/
+  /*min-height: 50px;*/
+}
+
+.invited-user-list::-webkit-scrollbar {
+  width: 14px;
+}
+
+.invited-user-list::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 73, 74, 0.65);
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.invited-user-list button:hover {
+  opacity: 0.5;
+}
+
+.invite-autocomplete {
+  /*position: absolute;*/
+  min-width: 100px;
+  max-width: 230px;
+  background-color: #ffffff;
+  border: solid 2px lightblue;
+  border-radius: 5px;
+  border-top: none;/*it gets the border top from the first element in the autocomplete box*/
+  margin-left: 7px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*min-height: calc(100% - 139px);*/
+  max-height: 300px;
+  position: relative;
+  margin-top: 0;
+  z-index: 9999;
+}
+
+.invite-autocomplete::-webkit-scrollbar {
+  margin-left: -7px;
+  width: 14px;
+}
+
+.invite-autocomplete::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 73, 74, 0.65);
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.invite-autocomplete-item {
+  display: block;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+  width: 230px;
+  /*width: 100%;*/
+  background: none;
+  padding: 6px;
+  border-top: solid 2px #ebebeb;
+  z-index: 9999;
+}
+
+.invite-autocomplete-item:hover, .invite-autocomplete-item:focus {
+  background: #f0f0f0;
+  color: white;
+}

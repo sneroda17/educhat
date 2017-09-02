@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 27</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="1.81260902e-15" y="9" width="17.9019367" height="11.992356" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="21.9019367" height="15.992356">
+            <rect x="-2" y="7" width="21.9019367" height="15.992356" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Home-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-View-(Oct-12)" transform="translate(-1281.000000, -975.000000)">
+            <g id="Group-27" transform="translate(1283.000000, 975.000000)">
+                <g id="Group-26">
+                    <rect id="Rectangle-4" fill="#D8D8D8" x="8" y="4" width="2" height="4"></rect>
+                    <use id="Rectangle-3" stroke="#D8D8D8" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                    <ellipse id="Oval-7" fill="#D8D8D8" cx="13.7476822" cy="15.3892916" rx="1.25" ry="1.25289866"></ellipse>
+                    <ellipse id="Oval-7" fill="#D8D8D8" cx="4.20153154" cy="15.3892916" rx="1.25" ry="1.25289866"></ellipse>
+                    <ellipse id="Oval-7" fill="#D8D8D8" cx="9" cy="2.50579731" rx="2.5" ry="2.50579731"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

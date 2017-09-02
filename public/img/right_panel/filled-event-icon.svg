@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 18</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Create-Subchat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Event-tab" transform="translate(-1314.000000, -81.000000)">
+            <g id="Group-18" transform="translate(1314.000000, 81.000000)">
+                <rect id="Rectangle-2" fill="#4EA6E5" x="0" y="0" width="36" height="36" rx="6"></rect>
+                <path d="M18.1,23.4 L22.6,23.4 L22.6,18.9 L18.1,18.9 L18.1,23.4 Z M21.7,9 L21.7,10.8 L14.5,10.8 L14.5,9 L12.7,9 L12.7,10.8 L11.8,10.8 C10.801,10.8 10.009,11.61 10.009,12.6 L10,25.2 C10,26.19 10.801,27 11.8,27 L24.4,27 C25.39,27 26.2,26.19 26.2,25.2 L26.2,12.6 C26.2,11.61 25.39,10.8 24.4,10.8 L23.5,10.8 L23.5,9 L21.7,9 L21.7,9 Z M11.8,15.3 L24.4,15.3 L24.4,25.2 L11.8,25.2 L11.8,15.3 Z" id="Fill-155" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

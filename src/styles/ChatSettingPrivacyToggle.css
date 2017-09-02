@@ -1,0 +1,70 @@
+.chat-privacy-selection-box {
+  text-align: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.chat-privacy-button--private {
+  background: linear-gradient(90deg, #29acbe  50%, white 50%);
+}
+
+.chat-privacy-button--public {
+  background: linear-gradient(90deg, white 50%, #29acbe 50%);
+}
+
+.chat-privacy-button--private--disabled {
+  background: linear-gradient(90deg, grey  50%, white 50%);
+}
+
+.chat-privacy-button--public--disabled {
+  background: linear-gradient(90deg, white 50%, grey 50%);
+}
+
+.chat-privacy-button--public--disabled:hover {
+  cursor: default;
+}
+
+.chat-privacy-button--private--disabled:hover {
+  cursor: default;
+}
+
+.chat-privacy-title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 50.5px;
+  margin-bottom: 5px;
+}
+
+.chat-privacy-button {
+   cursor: pointer;
+   padding: 0px;
+   width: 140px;
+   height: 30px;
+   border-radius: 5px;
+   border: solid 1px #d8d8d8;
+   display: inline-flex;
+   align-items: center;
+ }
+
+.chat-privacy-button__active {
+  cursor: pointer;
+  margin-top: 5px;
+  border: solid 1px #29acbe;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+}
+
+.chat-privacy-button__text {
+  width: 70px;
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.chat-privacy-button__text--active {
+  color: white;
+}

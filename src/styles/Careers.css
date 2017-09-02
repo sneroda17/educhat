@@ -1,0 +1,28 @@
+.careersContainer {
+  padding: 80px;
+}
+
+.careersTitle {
+  text-align: center;
+}
+
+.careersApplyButton {
+  width: 300px;
+  color: white;
+  background-color: #f3bb25;
+  border-radius: 3px;
+  padding-right: 28px;
+  padding-left: 28px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+.careersApplyButton:hover {
+  color: white;
+  background-color: #ddaa22;
+}
+
+.careerLineLimit{
+  margin-top: 20px;
+}

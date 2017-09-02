@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 18</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Create-Subchat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="File-tab" transform="translate(-1178.000000, -81.000000)">
+            <g id="Group-18" transform="translate(1178.000000, 81.000000)">
+                <rect id="Rectangle-2" fill="#4EA6E5" x="0" y="0" width="36" height="36" rx="6"></rect>
+                <path d="M16,10 L10,10 C8.9,10 8.01,10.9 8.01,12 L8,24 C8,25.1 8.9,26 10,26 L26,26 C27.1,26 28,25.1 28,24 L28,14 C28,12.9 27.1,12 26,12 L18,12 L16,10 L16,10 Z" id="Shape" stroke="#FFFFFF" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,368 @@
+.login-submit-button {
+  margin-top: 30.5px;
+  width: 40%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #69c081;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.onboarding-popup-wrapper {
+  background-image: linear-gradient(123deg, #3dbdb6, #0089ce);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.onboarding-popup-school {
+  width: 628px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 2px;
+}
+
+.onboarding-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 30px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.edu-chat-logo {
+  margin-top: 9px;
+  width: 50px;
+  height: 58.2px;
+}
+
+.seperator {
+  margin-top: 20.8px;
+  width: 133px;
+  height: 2px;
+  background-color: #6f6f6f;
+}
+
+.header-title {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+  margin-top: 10px !important;
+}
+
+.onboarding-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 5em;
+  margin-top: -15px;
+}
+
+.school-onboarding-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  min-height: 5em;
+}
+
+
+
+.input-container {
+  width: 400px;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.school-input, .first-name-input, .last-name-input, .email-input, .password-input {
+  width: 100%;
+  height: 47px;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  outline: none;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+input::placeholder {
+  color: #9b9b9b;
+}
+
+.school-input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+}
+
+.university-popup {
+  top: 64px;
+  max-height: 293.5px;
+  width: 441px;
+  background-color: #ffffff;
+  border-top: none !important;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0;
+  list-style: none;
+  z-index: 1;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.university-popup > li {
+  border-bottom: .5px solid #9b9b9b;
+}
+
+.university-popup > li:last-of-type {
+  border: none;
+}
+
+
+.university-popup::-webkit-scrollbar {
+  width: 14px;
+}
+
+.university-popup::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 73, 74, 0.65);
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.university {
+  padding: 10.5px 20px;
+  font-size: 18px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+  cursor: default;
+}
+
+.university:hover {
+  background-color: #d8d8d8;
+}
+
+.onboarding-submit-button {
+  margin-right: 30px;
+  margin-top: 30.5px;
+  width: 321px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #69c081;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.onboarding-submit-button-inactive {
+  margin-top: 30.5px;
+  width: 321px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.onboarding-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-description {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.verify-link {
+  cursor: pointer;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: white;
+  text-decoration:  none;
+}
+
+.login-link {
+  cursor: pointer;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: black;
+  text-decoration:  none;
+}
+
+.account-container {
+  display: flex;
+  align-items: center;
+}
+
+.active-faculty-container, .faculty-container {
+  margin-right: 55.5px;
+  cursor: pointer;
+}
+
+.active-student-container, .student-container {
+  margin-left: 55.5px;
+  cursor: pointer;
+}
+
+.faculty-img:hover, .student-img:hover {
+  background-color: #ededed
+}
+
+.faculty-img {
+  width: 98.5px;
+  height: 230.4px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.student-img {
+  width: 98.5px;
+  height: 230.4px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.active-faculty-container .faculty-title, .active-student-container .student-title {
+  font-weight: 500;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #000000;
+}
+
+.faculty-title, .student-title {
+  font-size: 24px;
+  text-align: center;
+  color: #6f6f6f;
+  font-weight: normal;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.active-student-container .selected-line, .active-faculty-container .selected-line{
+  background-color: #69c081;
+}
+
+.selected-line {
+  height: 5px;
+  background-color: transparent;
+}
+
+.account-seperator {
+  width: 3px;
+  height: 159px;
+  background-color: #6f6f6f;
+}
+
+.policy-description {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin: 20.5px 0 -8px 0;
+  margin-top: 20.5px;
+  margin-bottom: -8px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  width: 400px;
+}
+
+.back-icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  /*width: 18px;*/
+  height: 18px;
+  cursor: pointer;
+}
+
+.back-word {
+  color: #6f6f6f;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  cursor: pointer;
+}
+
+.main-alert-message {
+  height: 18px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #FF0000
+}
+
+.warning-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display:inline-block;
+}
+
+.signup-account-field {
+  width: 450px;
+  position: relative;
+  height: 45px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.signup-university-field {
+  width: 450px;
+  position: relative;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}

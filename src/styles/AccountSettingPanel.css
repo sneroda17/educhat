@@ -1,0 +1,484 @@
+.account-setting-panel-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.account-setting-panel {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /*height: calc(100vh - 20px);*/
+  /*width: 300px;*/
+  /*border-radius: 3px;*/
+  /*box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);*/
+  margin-right: 10px;
+
+  width: 300px;
+  height: calc(100vh - 20px);
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 0.5px #9b9b9b;
+}
+
+.account-setting-panel-header {
+  /*width: 300px;*/
+  /*height: 60px;*/
+  /*background-color: #4b4b4b;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+
+  width: 300px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #127c8a;
+  display: flex;
+  align-items: center;
+
+}
+
+.account-setting-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 100px);
+}
+
+.popup-close-button {
+  color: white;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin: 0 5px 0 auto;
+}
+
+.popup-close-button:hover {
+  opacity: .5;
+}
+
+.close-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.popup-title-text {
+  /*font-size: 20px;*/
+  /*font-weight: 500;*/
+  /*letter-spacing: 0.1px;*/
+  /*color: #ffffff;*/
+  /*margin-left: 10px;*/
+
+  width: 163px;
+  height: 24px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.popup-info-update-status {
+  height: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow-wrap: break-word;
+}
+
+.success {
+  color: green;
+}
+.failure {
+  color: red;
+}
+
+.backward-arrow {
+  width: 46px;
+  height: 36px;
+  padding-left: 19px;
+  color: #ffffff;
+  display:inline-block;
+}
+
+.account-chunk-header {
+  width: 187px;
+  height: 19px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #4a4a4a;
+  margin-left: 25px;
+  margin-right: 19px;
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+
+.account-info-field {
+  width: 260px;
+  height: 45px;
+  margin-left: -10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.changeable-field-header {
+  width: 187px;
+  height: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: #000000;
+  margin-left: 33px;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+
+.changeable-field-header-blue {
+  width: 187px;
+  height: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: #127c8a;
+  margin-left: 33px;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+
+.changeable-field-input-box {
+  width: 220px;
+  height: 12px;
+  cursor: hand;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: #4a4a4a;
+  margin-left: 33px;
+  margin-top: 10px;
+  border:none;
+  border-radius: 5px;
+}
+
+.changeable-field-input-box-blue {
+  width: 220px;
+  height: 12px;
+  cursor: text;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: #4a4a4a;
+  margin-left: 33px;
+  margin-top: 10px;
+  border:none;
+  border-radius: 5px;
+}
+
+
+.changeable-field-input-box-disabled {
+  width: 220px;
+  height: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: #4a4a4a;
+  margin-left: 33px;
+  margin-top: 10px;
+  border:none;
+  border-radius: 5px;
+  background: white;
+}
+
+.unchangeable-field-input-box {
+  width: 187px;
+  height: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: rgba(121, 121, 121, 0.66);
+  margin-left: 33px;
+  margin-top: 10px;
+  border:none;
+  border-radius: 5px;
+}
+
+.unchangeable-field-header {
+  width: 187px;
+  height: 13px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  font-weight: bolder;
+  margin-left: 33px;
+  margin-top: 5px;
+}
+
+.Rectangle-uneditablebox {
+  width: 260px;
+  height: 45px;
+  border-radius: 5px;
+  margin-left: -10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.Rectangle-dropdownbox{
+  width: 260px;
+  height: 32px;
+  border-radius: 5px;
+  margin-left: -10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.line {
+  margin-left: 0px;
+  width: 300px;
+  border: solid .5px #e6e6e6;
+}
+
+.small-line {
+  margin-left: 23px;
+  width: 246.5px;
+  border: solid .5px #e6e6e6;
+}
+
+.small-line-blue {
+  margin-left: 23px;
+  width: 246.5px;
+  border: solid .5px #127c8a;
+}
+
+.reset-password-button {
+  width: 187px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 6px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-right: 19px;
+  text-align: left;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+
+.save-button {
+  width: 153px;
+  height: 50px;
+  border: none;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+  margin-left: 73px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  /*font-stretch: normal;*/
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+.save-button2 {
+  width: 153px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #127c8a;
+  margin-left: 73px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  /*font-stretch: normal;*/
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+.change-log {
+  width: 187px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 6px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-right: 19px;
+  text-align: left;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+
+.logout-button {
+  width: 187px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-left: 6px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-right: 19px;
+  text-align: left;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+
+.logout-button:hover{
+  color: #d0011b;
+}
+
+.popup-info-password-status{
+  height: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-top: -5px;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+  color: #127c8a;
+}
+
+.hidden{
+  display:none;
+}
+
+.department-message{
+  width: 187px;
+  height: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.1px;
+  color: #d0011b;
+  margin-left: 51px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.logout-icon{
+  width: 17px;
+  height: 17px;
+  margin-left: 25px;
+  margin-top: 6px;
+}
+
+.changelog-icon{
+  width: 17px;
+  height: 17px;
+  margin-left: 25px;
+  margin-top: 6px;
+}
+
+.reset-password-icon{
+  width: 17px;
+  height: 17px;
+  margin-left: 25px;
+  margin-top: 6px;
+}
+
+.personal-info-icon{
+  width: 17px;
+  height: 17px;
+  margin-right: 14px;
+  margin-top: 6px;
+}
+
+.g-recaptcha{
+  margin-left: 30px;
+  transform:scale(0.77);
+  transform-origin:0 0;
+}
+
+.account-setting-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.account-setting-body::-webkit-scrollbar
+{
+  width: 7px;
+  border-radius: 2.5px;
+  background-color: transparent;
+}
+
+.account-setting-body::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+.edit-name-icon {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+  margin-right: -20px;
+}

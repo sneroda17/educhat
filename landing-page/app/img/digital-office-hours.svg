@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Langing-Page-(Dekstop)" transform="translate(-687.000000, -2651.000000)">
+            <g id="Group-14" transform="translate(687.000000, 2651.000000)">
+                <g id="Gears" fill="#4EA6E5">
+                    <path d="M32.5,65 C50.4492544,65 65,50.4492544 65,32.5 C65,14.5507456 50.4492544,0 32.5,0 C14.5507456,0 0,14.5507456 0,32.5 C0,50.4492544 14.5507456,65 32.5,65 Z" id="Oval-9"></path>
+                </g>
+                <g id="Free-80-25-e-commerce-cart-buy" transform="translate(15.000000, 16.000000)" stroke="#263238" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.08,32.5 L25.92,32.5" id="Layer-1" fill="#E2F3FB"></path>
+                    <rect id="Layer-2" stroke-width="0.5" fill="#8AA4B0" x="0" y="0" width="36" height="28.8" rx="3"></rect>
+                    <rect id="Layer-3" stroke-width="0.5" fill="#FFFFFF" x="2.52" y="2.52" width="30.96" height="23.76"></rect>
+                    <polygon id="Layer-4" stroke-width="0.5" fill="#6A808B" points="14.4 28.8 21.6 28.8 22.4114062 32.4 13.5885937 32.4"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

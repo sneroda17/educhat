@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>cancel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Create-Subchat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Adding-Area-of-Study" transform="translate(-515.000000, -494.000000)">
+            <g id="Tennis-Tag" transform="translate(440.000000, 489.000000)">
+                <g id="cancel" transform="translate(83.000000, 13.000000) scale(1, -1) translate(-83.000000, -13.000000) translate(74.000000, 4.000000)">
+                    <polygon id="bounds" points="18 0 0 0 0 18 18 18"></polygon>
+                    <path d="M9,16.5 C4.875,16.5 1.5,13.125 1.5,9 C1.5,4.875 4.875,1.5 9,1.5 C13.125,1.5 16.5,4.875 16.5,9 C16.5,13.125 13.125,16.5 9,16.5 L9,16.5 Z M12.75,6.3 L11.7,5.25 L9,7.95 L6.3,5.25 L5.25,6.3 L7.95,9 L5.25,11.7 L6.3,12.75 L9,10.05 L11.7,12.75 L12.75,11.7 L10.05,9 L12.75,6.3 L12.75,6.3 Z" id="Shape" fill="#29ACBE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

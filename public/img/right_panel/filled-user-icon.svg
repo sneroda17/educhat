@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,18.9295509 C12,17.2750035 13.341786,15.9337278 15.0011836,15.9337278 L23.3988164,15.9337278 C25.0563243,15.9337278 26.4,17.2779706 26.4,18.9295509 L26.4,20.8621651 C26.4,22.5167125 25.2139081,24.5050822 23.7121601,25.1707307 C23.7121601,25.1707307 22.7680597,26.1374113 19.2,26.1374113 C15.6319403,26.1374113 14.6878399,25.1707307 14.6878399,25.1707307 C13.2033869,24.445723 12,22.5137454 12,20.8621651 L12,18.9295509 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14.4" height="10.2036835" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Create-Subchat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Member-Tab" transform="translate(-1247.000000, -81.000000)">
+            <g id="Group-17" transform="translate(1245.800000, 81.000000)">
+                <g id="Group-8-Copy" transform="translate(0.600000, 0.000000)">
+                    <rect id="Rectangle-2" fill="#4EA6E5" x="0.6" y="0" width="36" height="36" rx="6"></rect>
+                    <ellipse id="Oval-3-Copy" stroke="#FFFFFF" stroke-width="2" cx="18.6" cy="12.6319527" rx="3.6" ry="3.63195266"></ellipse>
+                </g>
+                <use id="Rectangle-5" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" transform="translate(19.200000, 21.035570) scale(1, -1) translate(-19.200000, -21.035570) " xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

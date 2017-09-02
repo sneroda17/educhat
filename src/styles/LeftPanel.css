@@ -1,0 +1,209 @@
+.left-panel-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.left-panel {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 22px);
+  width: 300px;
+  border-radius: 3px;
+  border: solid 0.2px #c4c4c4;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+}
+
+.chat-type {
+  width: 47px;
+  height: 17px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.drop-down-list {
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.user-image {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.down-arrow-image {
+  height: 10px;
+  margin-top: 20px;
+}
+
+.left-panel-header {
+  width: 300px;
+  height: 60px;
+  background-color: #127c8a;
+  display: flex;
+  align-items: center;
+}
+
+.create-chat-icon {
+  height: 18px;
+  margin: 0 10px 0 auto;
+  cursor: pointer;
+  z-index: 49;
+}
+
+.chat-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: calc(100% - 160px);
+  width:300px;
+  /*overflow: scroll;*/
+}
+.chat-container:hover{
+  overflow-y: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 3px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #d8d8d8;
+  border: 1px solid rgba(0, 0, 0, 0);
+  /*background-clip: padding-box;*/
+  border-radius: 1px;
+  /*box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);*/
+}
+.chat-list-inner-container{
+  width:300px;
+}
+
+.left-panel input[type="text"] {
+  border: none;
+  outline: none;
+  margin-top: 2px;
+  width: 218px;
+  height: 35px;
+  font-size: 15px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.left-panel input::placeholder {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.left-panel-search-box-container {
+  display: flex;
+  flex-direction: column;
+  height: 95px;
+  align-items: center;
+  background-color: #29acbe;
+}
+
+.chat-search-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 284px;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 1.5px #ffffff;
+  background-color: #ffffff;
+  margin: 8px auto;
+}
+
+.search-input-icon {
+  display: block;
+  height: 14px;
+  width: 14px;
+  margin: 6px;
+}
+
+.search-input-clear-icon {
+  display: block;
+  height: 14px;
+  width: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.exit-search-mode-back-arrow {
+  display: block;
+  height: 14px;
+  width: 14px;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.build-version {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+}
+
+
+.chat-search-input-container--active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 284px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin: 7px;
+}
+
+.loading-ring {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 25px;
+  align-items: center;
+}
+
+.search-no-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-no-result-title {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.search-no-result-body {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  align-items: center;
+  font-style: oblique;
+}
+
+.search-welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-welcome-title {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.search-welcome-body {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  text-align: center;
+  /*font-style: oblique;*/
+}

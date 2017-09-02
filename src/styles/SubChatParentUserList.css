@@ -1,0 +1,141 @@
+.user {
+  display: flex;
+}
+
+.button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.invite-all-selection {
+  display: flex;
+}
+
+.user-details-container {
+  display: flex;
+  align-items: center;
+  width: calc(270px - 45px);
+}
+
+.seperator{
+  width: 270px;
+  border: solid 1px #e6e6e6;
+  margin-left: -5px;
+}
+
+.parent-user-checkbox {
+  flex: 1;
+}
+
+.user-information {
+  flex: 2.5;
+}
+
+.subchat-checkbox {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: solid 1px #979797;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+}
+
+.subchat-checkbox:active, .subchat-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.subchat-checkbox:checked {
+  background-color: #29acbe;
+  border: 1px solid #29acbe;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  color: #29acbe;
+}
+
+.subchat-checkbox:checked:after {
+  /*content: '\2714';*/
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #ffffff;
+  content: url('../../public/img/shape.svg');
+}
+
+.user-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.user-name {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  color: #4a4a4a;
+  margin-right: 6px;
+}
+
+.admin {
+  width: 39px;
+  height: 16px;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  border: solid 0.5px #4a4a4a;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 6px;
+  line-height: 16px;
+}
+
+.ta {
+  width: 18px;
+  height: 16px;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  border: solid 0.5px #4a4a4a;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 6px;
+  line-height: 16px;
+}
+
+.user-profile-button {
+  /*border: none;*/
+  border-top: none;
+  border-bottom: solid 1px #e6e6e6;
+  border-left: none;
+  border-right-color: #ffffff;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.user-profile-button:hover {
+  background: #ededed;
+  display: inline-block;
+}
+
+
+.online-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #2fc35f;
+  border: solid 0.5px #2fc35f;
+  margin-top: -15px ;
+  /*margin-right: 0px;*/
+  margin-left: 29px;
+  position: relative;
+}

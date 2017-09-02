@@ -1,0 +1,357 @@
+.chat-input {
+  resize: none;
+  outline: none;
+  border: none;
+  /*overflow: hidden;*/
+  padding: 10px 5px 5px 10px;
+  max-height: 30px;
+  width: 100%;
+  line-height: 18px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: rgba(0, 0, 0, 0.67);
+  background-color: transparent;
+  -moz-hyphens:auto;
+  -ms-hyphens:auto;
+  -webkit-hyphens:auto;
+  hyphens:auto;
+  white-space: pre-wrap;
+  line-break: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 30px;
+  word-wrap:break-word;
+}
+
+.chat-input::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-input::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 73, 74, 0.65);
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.chat-panel {
+  border-top: solid 2px #d8d8d8;
+  display: flex;
+  flex: 1 54px;
+  /*min-height: 28px;*/
+}
+
+.chat-input-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  word-wrap:break-word;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  /*overflow-y: scroll;*/
+  /*overflow-x: hidden;*/
+}
+
+.chat-left-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 27px;
+  min-width: 27px;
+}
+
+.chat-right-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /*width: 200px;*/
+  width: 100px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.chat-right-wrapper img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.bot-img {
+  width: 18px;
+  height: 21px;
+  object-fit: contain;
+  margin-bottom: 3px;
+}
+
+.paperclip-img {
+  vertical-align:bottom;
+  width: 10px;
+  height: 20px;
+  object-fit: contain;
+  margin-bottom: 3px;
+}
+
+.calendar-img {
+  width: 27px !important;
+  height: 20px;
+  object-fit: contain;
+
+}
+
+.keyboard-img {
+  vertical-align:bottom;
+  width: 50px !important;
+  height: 18.9px;
+  object-fit: contain;
+  margin-bottom: 3px;
+}
+
+.upload-button {
+  display: none;
+  margin-bottom: -10px;
+}
+
+.file-upload {
+  height: 232px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.file-upload-header {
+  height: 29px;
+  background-color: #127c8a;
+  width: 100%;
+  position: relative;
+}
+
+.header-title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  line-height: 29px;
+  padding-left: 9px;
+}
+
+.cancel-img {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 7px;
+}
+
+.file-upload-container {
+  display: flex;
+  /*padding: 10px 45px 26px 20px;*/
+  align-items: center;
+  width: 70%;
+  margin-left: 140px;
+  position: relative;
+}
+
+.file-preview-image {
+  width: 120px;
+  height: 160px;
+  cursor: pointer;
+  object-fit: cover;
+  margin: 20px;
+  position: absolute;
+}
+
+.file-preview-image-comment {
+  width: 120px;
+  height: 115px;
+  cursor: pointer;
+}
+
+.file-title-input {
+  width: 200px;
+  /*height: 42px;*/
+  /*line-height: 42px;*/
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #6f6f6f;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.file-title-text {
+  width: 500px;
+  height: 42px;
+  line-height: 42px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+  margin: 20px 10px 40px 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-title-display {
+  width: 260px;
+  height: 42px;
+  line-height: 42px;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #6f6f6f;
+  font-size: 20px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #4a4a4a;
+  margin: 0 10px 40px 30px;
+}
+
+.file-title-ext {
+  width: 35px;
+  height: 16px;
+  line-height: 42px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  color: #9b9b9b;
+  /*margin-top: 20px;*/
+  margin-left: 20px;
+}
+
+.rename-file-title-button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  height: 42px;
+  width: 100px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.7px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #127c8a;
+  border-color: #127c8a;
+  border-radius: 5px;
+  opacity: .5;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  position: inherit;
+}
+
+/*.rename-file-title-button:hover {*/
+  /*background-color:  #127c8a;*/
+  /*color: #ffffff;*/
+  /*opacity: 1;*/
+/*}*/
+
+.save-file-title-button {
+  cursor: pointer;
+  display: inline-block;
+  /*border: none;*/
+  /*height: 42px;*/
+  width: 100px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.7px;
+  text-align: center;
+  /*line-height: 42px;*/
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #127c8a;
+  border-color: #127c8a;
+  border-radius: 5px;
+  opacity: .5;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  position: inherit;
+  margin-top: 50px;
+}
+
+.file-name-area {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+.question-mark-active {
+  vertical-align:bottom;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  padding: 1px 2px;
+  width: 10px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.question-mark {
+  vertical-align:bottom;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  padding: 1px 2px;
+  width: 10px;
+  height: 20px;
+  filter: grayscale(1);
+}
+
+.character-limit{
+  color: #29acbe;
+  font-size: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.max-limit{
+  color: red;
+  width: 300px;
+  font-size: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  position: inherit;
+  /*margin-left: 180px;*/
+}
+
+.max-limit-initial{
+  color: red;
+  width: 300px;
+  font-size: 14px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  margin-left: -90px;
+  /*margin-left: -90px;*/
+  margin-top: -15px;
+}
+.limit-check{
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #29acbe;
+  /*margin-top: 30px;*/
+  margin-left: 20px;
+  width: 500px;
+}
+.limit-exceed-button{
+  cursor: pointer;
+  display: block;
+  border: none;
+  height: 42px;
+  width: 100px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.7px;
+  text-align: center;
+  line-height: 42px;
+  font-size: 20px;
+  background-color: #4a4a4a;
+  color: white;
+  border-radius: 5px;
+  opacity: .5;
+  margin-left: 500px;
+  margin-bottom: 40px;
+}
+/*.chat-icons{
+  margin-top: -10px;
+}*/

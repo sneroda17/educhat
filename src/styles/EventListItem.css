@@ -1,0 +1,80 @@
+.event {
+  display: flex;
+  justify-items: center;
+  padding: 5px 10px;
+}
+
+.event-date-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: solid 2px #4ea6e5;
+  position: relative;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  color: #4ea6e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.event-month {
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.event-day {
+  font-size: 19px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.event-details-container {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-title {
+  font-size: 16px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.4px;
+  color: #4a4a4a;
+}
+
+.event-date {
+  font-size: 10px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #9b9b9b;
+}
+
+.event:hover .comment-icon {
+  display: block;
+}
+
+.comment-icon {
+  display: none;
+  height: 22px;
+  width: 19px;
+  align-self: center;
+  margin-left: auto;
+  background-image: url('../../public/img/right_panel/comment-icon.svg');
+  color: #4EA6E5;
+  line-height: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+}
+
+.comment-icon:hover {
+  background-image: url('../../public/img/right_panel/filled-comment-icon.svg');
+  color: #ffffff;
+}

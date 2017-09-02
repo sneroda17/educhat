@@ -1,0 +1,19 @@
+.user-type-icon {
+  width: 12px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  border: solid 0.5px #4a4a4a;
+  display: flex;
+  justify-content: center;
+}
+
+.user-type__txt {
+  font-size: 8px;
+  font-weight: 500;
+  margin-top: 2px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #ffffff;
+}

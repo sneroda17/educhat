@@ -1,0 +1,200 @@
+.main-panel-container {
+  flex: 1;
+  position: relative;
+}
+
+.main-panel, .edit-main-panel {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  flex: 300px;
+  position: relative;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 0.3px #c4c4c4;
+  flex-direction: column;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  height: calc(100vh - 22px);
+}
+
+.main-header {
+  background-color: #29acbe;
+  padding: 10px;
+  transition: height 1s;
+}
+
+.chat-details-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-img {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.chat-details {
+  margin: 10px;
+}
+
+.chat-title {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px;
+  color: #003b65;
+}
+
+.chat-title-only {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.chat-input {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  border-bottom: solid black 0.5px !important;
+}
+
+.subchat-title {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.subchat-input {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  border-bottom: solid black 0.5px !important;
+}
+
+.information-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.edit-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.check-mark-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.chat-desc {
+  font-size: 12px;
+  color: #ffffff;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.chat-desc-textarea {
+  max-width: 600px;
+  max-height: 43px;
+  min-width: 200px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  margin-left: 10px;
+  background-color: #4ea6e5;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: solid black 0.5px !important;
+}
+
+.message-container {
+  display: flex;
+  height: calc(100% - 60px);
+  position: relative;
+  flex: 1;
+  background-color: #f3f5f7;
+}
+
+
+.message-scroll-wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  flex: 1;
+}
+
+.message-scroll-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message-scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color:#d8d8d8;
+  border: 1px solid rgba(0, 0, 0, 0);
+  /*background-clip: padding-box;*/
+  border-radius: 7px;
+  /*box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.05), inset 1px 1px 0 rgba(0, 0, 0, 0.05);*/
+}
+
+.inner-panel-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.chat-input-container{
+  background-color: #ffffff;
+}
+
+.loading-icon {
+  margin-left: 40%;
+  margin-top: 30%;
+}
+
+.upload-button {
+display: none;
+}
+
+.toggle-right-panel {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  border: none;
+  width: 52px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+}
+.toggle-comment-panel {
+  position: absolute;
+  right: 0;
+  margin-right: 60px;
+  border: none;
+  width: 52px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+}
+
+
+.toggle-right-panel__active {
+  background-color: #127c8a;
+}
